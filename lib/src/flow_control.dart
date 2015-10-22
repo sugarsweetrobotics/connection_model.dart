@@ -6,9 +6,9 @@ import 'port.dart';
 import 'statement.dart';
 
 class If extends Box {
-  var condition;
-  var yes;
-  var no;
+  InPort condition;
+  OutPort yes;
+  OutPort no;
   If(Statement owner) : super(owner) {
     this.boxName = "if";
     condition = new InPort(this, 'condition');
@@ -22,8 +22,8 @@ class If extends Box {
 
 
 class While extends Box {
-  var condition;
-  var loop;
+  InPort condition;
+  OutPort loop;
   While(Statement owner) : super(owner) {
     this.boxName = "while";
     condition = new InPort(this, 'condition');

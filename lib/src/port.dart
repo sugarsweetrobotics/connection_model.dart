@@ -7,7 +7,7 @@ class Port {
   Box owner;
   String _name;
   get name => this._name;
-  var connections = [];
+  List<Connection> connections = [];
 
   Port(this.owner, this._name) {}
 

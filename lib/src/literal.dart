@@ -8,7 +8,7 @@ import 'port.dart';
 
 class IntegerLiteral extends Box {
   int _value;
-  var out;
+  OutPort out;
   get value => _value;
   IntegerLiteral(Statement owner, this._value) : super(owner) {
     this.boxName = 'intliteral"value=${_value}"';
@@ -20,7 +20,7 @@ class IntegerLiteral extends Box {
 
 class StringLiteral extends Box {
   String _value;
-  var out;
+  OutPort out;
   get value => _value;
 
   StringLiteral(Statement owner, this._value) : super(owner) {

@@ -11,7 +11,7 @@ class InvalidPortPairException implements Exception {
 }
 
 class Connection {
-  var ports = [];
+  List<Port> ports = [];
 
   Connection(var connectorA, var connectorB) {
     if ((connectorA is OutPort && connectorB is OutPort) ||

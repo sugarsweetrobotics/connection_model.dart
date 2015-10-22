@@ -17,7 +17,7 @@ void main() {
   //addBox.inport("in0").connect(literal4.outport("out"));  // Both by name and attribute, you can contact to ports.
   addBox.in1.connect(literal3.out);
   setvariableA.in0.connect(addBox.out);
-  app.statementList.add(s0);
+  app.startState.next.connect(s0.previous);
 
   var s1 = new Statement();
   var ifbox = new If(s1);
@@ -40,7 +40,8 @@ void main() {
   equalsBox.condition.connect(ifbox.condition);
   ifbox.yes.connect(s1_1.previous);
   ifbox.no.connect(s1_1.previous);
-  app.statementList.add(s1);
+
+  s0.next.connect(s1.previous);
 
 
   var s2 = new Statement();
@@ -54,7 +55,8 @@ void main() {
 
   whilebox.condition.connect(alwaysTrueBox.condition);
   whilebox.loop.connect(s2_0.previous);
-  app.statementList.add(s2);
+
+  s1.next.connect(s2.previous);
 
   print (app);
 }

@@ -30,3 +30,14 @@ class TrueCondition extends Box {
   }
 
 }
+
+
+class FalseCondition extends Box {
+  var condition;
+  FalseCondition(Statement owner) : super(owner) {
+    this.boxName = 'alwaysFalse';
+    condition = new OutPort(this, 'condition');
+    addPort(condition);
+  }
+
+}

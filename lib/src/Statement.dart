@@ -7,9 +7,9 @@ import 'box.dart';
 import 'port.dart';
 
 class Statement extends Box {
-  var boxes = [];
-  var previous;
-  var next;
+  List<Box> boxes = [];
+  InPort previous;
+  OutPort next;
 
   Statement({Statement owner : null}) : super(owner) {
     this.boxName = 'statement';

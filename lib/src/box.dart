@@ -12,8 +12,8 @@ class SameNamePortException extends Exception {
 class Box {
   static int _id = 0;
   int id;
-  var _inports = [];
-  var _outports = [];
+  List<InPort> _inports = [];
+  List<OutPort> _outports = [];
   Statement _owner;
   String boxName = "plain_box";
 

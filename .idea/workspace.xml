@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c8d2470-688b-40fc-8db1-ca37c7d94567" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/application.dart" afterPath="$PROJECT_DIR$/lib/src/application.dart" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/basic_operators.dart" afterPath="$PROJECT_DIR$/lib/src/basic_operators.dart" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/src/geometry.dart" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/box.dart" afterPath="$PROJECT_DIR$/lib/src/box.dart" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/condition.dart" afterPath="$PROJECT_DIR$/lib/src/condition.dart" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/connection.dart" afterPath="$PROJECT_DIR$/lib/src/connection.dart" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/flow_control.dart" afterPath="$PROJECT_DIR$/lib/src/flow_control.dart" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/io.dart" afterPath="$PROJECT_DIR$/lib/src/io.dart" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/literal.dart" afterPath="$PROJECT_DIR$/lib/src/literal.dart" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.dart" afterPath="$PROJECT_DIR$/main.dart" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/port.dart" afterPath="$PROJECT_DIR$/lib/src/port.dart" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/variable.dart" afterPath="$PROJECT_DIR$/lib/src/variable.dart" />
     </list>
     <ignored path="connectionist_model.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,22 +36,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="io.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/src/io.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-              <folding>
-                <element signature="e#31#49#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="basic_operators.dart" pinned="false" current-in-tab="false">
+      <file leaf-file-name="basic_operators.dart" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/src/basic_operators.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="1.0753677">
               <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
               <folding>
                 <element signature="e#1#20#0" expanded="true" />
@@ -85,10 +64,20 @@
         <entry file="file://$PROJECT_DIR$/lib/src/box.dart">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+              <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
               <folding>
                 <element signature="e#1#20#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="geometry.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/src/geometry.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -129,11 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.dart" pinned="false" current-in-tab="true">
+      <file leaf-file-name="application.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/src/application.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.082720585">
-              <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -168,7 +157,6 @@
         <option value="$PROJECT_DIR$/lib/connection.dart" />
         <option value="$PROJECT_DIR$/lib/src/variable.dart" />
         <option value="$PROJECT_DIR$/lib/src/port.dart" />
-        <option value="$PROJECT_DIR$/lib/src/box.dart" />
         <option value="$PROJECT_DIR$/lib/src/statement.dart" />
         <option value="$PROJECT_DIR$/lib/src/literal.dart" />
         <option value="$PROJECT_DIR$/lib/src/io.dart" />
@@ -178,6 +166,8 @@
         <option value="$PROJECT_DIR$/main.dart" />
         <option value="$PROJECT_DIR$/lib/src/application.dart" />
         <option value="$PROJECT_DIR$/lib/src/condition.dart" />
+        <option value="$PROJECT_DIR$/lib/src/geometry.dart" />
+        <option value="$PROJECT_DIR$/lib/src/box.dart" />
       </list>
     </option>
   </component>
@@ -588,16 +578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/src/basic_operators.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
-          <folding>
-            <element signature="e#1#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/condition.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -608,21 +588,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/application.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/geometry.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/box.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
           <folding>
             <element signature="e#1#20#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/src/application.dart">
+    <entry file="file://$PROJECT_DIR$/lib/src/basic_operators.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.082720585">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-          <folding />
+        <state vertical-scroll-proportion="1.0753677">
+          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+          <folding>
+            <element signature="e#1#20#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

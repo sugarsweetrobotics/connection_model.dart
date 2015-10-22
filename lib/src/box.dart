@@ -4,12 +4,15 @@ import "dart:core";
 //import "connector.dart";
 import "port.dart";
 import 'statement.dart';
+import 'geometry.dart';
 
-class SameNamePortException extends Exception {
-  SameNamePortException() : super() {}
+class SameNamePortException implements Exception {
+  const SameNamePortException();
 }
 
 class Box {
+  Point position = new Point(0,0);
+
   static int _id = 0;
   int id;
   List<InPort> _inports = [];

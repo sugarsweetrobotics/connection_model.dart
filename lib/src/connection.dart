@@ -1,11 +1,12 @@
 
 
-import "dart:core"
-import "port.dart"
+import "dart:core";
+import "port.dart";
 
-class InvalidPortPairException extends Exception {
+class InvalidPortPairException implements Exception {
 
-  InvalidPortPairException() : Exception() {}
+  final String msg;
+  const InvalidPortPairException();
 
 }
 
@@ -13,8 +14,8 @@ class Connection {
   var ports = [];
 
   Connection(var connectorA, var connectorB) {
-    if ((connectorA is OutPort and connectorB is OutPort) or 
-        (connectorA is InPort  and connectorB is InPort)) {
+    if ((connectorA is OutPort && connectorB is OutPort) ||
+        (connectorA is InPort  && connectorB is InPort)) {
       // Error throw Exception
       throw new InvalidPortPairException();
     }

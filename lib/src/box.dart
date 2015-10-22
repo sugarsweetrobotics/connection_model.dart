@@ -1,19 +1,29 @@
 
 import "dart:core";
 
-import "connector.dart";
+//import "connector.dart";
 import "port.dart";
-
+import 'statement.dart';
 
 class SameNamePortException extends Exception {
-  SameNamePortException() : Exception() {}
+  SameNamePortException() : super() {}
 }
 
 class Box {
+  static int _id = 0;
+  int id;
   var _inports = [];
   var _outports = [];
+  Statement _owner;
+  String boxName = "plain_box";
 
-  Box() { }
+  Box(this._owner) {
+    if (_owner != null) {
+      _owner.boxes.add(this);
+    }
+    this.id = _id;
+    _id++;
+  }
 
   InPort inport(String name) {
     for (InPort p in _inports) {
@@ -33,7 +43,7 @@ class Box {
     return null;
   }
 
-  void _addPort(Port port) {
+  void addPort(Port port) {
     if (port is InPort) {
       for (InPort p in _inports) {
         if (p.name == port.name) {
@@ -53,8 +63,30 @@ class Box {
     }
   }
 
-  void _delPort(Port port) {
+  void delPort(Port port) {
     _inports.remove(port);
     _outports.remove(port);
   }
-};
+
+  String toString() {
+    var s = '${boxName}(id=${id}): {';
+    s += 'InPort : {';
+    for (InPort p in _inports) {
+      s += p.toString();
+      if (p != _inports.last) {
+        s += ', ';
+      }
+    }
+    s += '}, OutPort : {';
+    for (OutPort p in _outports) {
+      s += p.toString();
+      if (p != _outports.last) {
+        s += ', ';
+      }
+    }
+    s += '}';
+    s += '}';
+
+    return s;
+  }
+}

@@ -1,0 +1,8 @@
+name: connectionist_model
+version: 0.0.1
+description: Program Model
+author: Yuki Suga <ysuga@ysuga.net>
+homepage: http://ysuga.net
+documentation: http://docs.newtify.com
+dependencies : {}
+dev_dependencies : {}

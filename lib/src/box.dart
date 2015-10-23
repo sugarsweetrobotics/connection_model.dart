@@ -11,7 +11,7 @@ class SameNamePortException implements Exception {
 }
 
 class Box {
-  Point position = new Point(0,0);
+  Point position = new Point(100,100);
 
   static int _id = 0;
   int id;
@@ -20,6 +20,8 @@ class Box {
   Statement _owner;
   String boxName = "plain_box";
 
+  get inports => _inports;
+  get outports => _outports;
   Box(this._owner) {
     if (_owner != null) {
       _owner.boxes.add(this);

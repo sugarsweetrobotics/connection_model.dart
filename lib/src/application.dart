@@ -16,6 +16,13 @@ class Application {
     return s.next.connections[0].ports[0].owner == s ? s.next.connections[0].ports[1].owner : s.next.connections[0].ports[0].owner;
   }
 
+  static Statement previousStatement(Statement s) {
+    if (s.previous.connections.length == 0) {
+      return null;
+    }
+    return s.previous.connections[0].ports[0].owner == s ? s.previous.connections[0].ports[1].owner : s.previous.connections[0].ports[0].owner;
+  }
+
   static void mapStatement(Statement s, var func) {
     if (s != null) {
       func(s);
